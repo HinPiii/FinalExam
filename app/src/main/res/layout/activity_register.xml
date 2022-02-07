@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#FFFFFF"
+    android:layout_marginTop="50dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/your_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:inputType="textPersonName"
+        android:background="@drawable/et_custom"
+        android:textSize="15sp" />
+
+    <EditText
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:id="@+id/et_gmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/e_mail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/et_custom"
+        android:textSize="15sp" />
+
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/et_custom"
+        android:hint="Cân nặng"
+        android:inputType="phone"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="15sp" />
+
+    <EditText
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:id="@+id/et_repassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Chiều cao"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="15dp"
+        android:inputType="phone"
+        android:background="@drawable/et_custom"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_custom"
+            android:text="Tiếp tục"
+            android:textColor="@android:color/white" />
+
+
+        <TextView
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.feeds">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_setting"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/browser_actions_bg_grey"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/backItem"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="14dp"
+                android:text="Tạo bài viết"
+                android:textColor="@android:color/background_dark" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="8dp"
+                android:text="Đăng" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <LinearLayout
+        android:id="@+id/liner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EEEEEE"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp">
+
+        <RelativeLayout
+            android:background="#EEEEEE"
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:src="@drawable/person"
+                app:shapeAppearanceOverlay="@style/circleImageViewStyle" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="12dp"
+                android:layout_toRightOf="@+id/img_user"
+                android:gravity="center|left"
+                android:text="Text" />
+
+
+        </RelativeLayout>
+
+
+        <EditText
+            android:background="#FFF"
+            android:id="@+id/post"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/deltaRelative"
+            android:layout_margin="15dp"
+            android:layout_marginTop="15dp"
+            android:ellipsize="end"
+            android:hint="Bạn đang nghĩ gì..."
+            android:lines="5"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/content"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/choosepic"
+            android:layout_width="86dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="121dp"
+            android:src="@drawable/ic_baseline_image_24" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

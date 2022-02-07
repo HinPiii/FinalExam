@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/food_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="#fff"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/deltaRelative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/avatar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Minh Hiệp"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="11 hrs"
+                    android:textColor="#808080"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:text="Status"
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deltaRelative"
+            android:layout_marginTop="15dp"
+            android:ellipsize="end"
+            android:lines="5"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/content"
+            android:id="@+id/pic"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"/>
+
+        <RelativeLayout
+            android:id="@+id/deltaRelative1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pic">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+
+                    android:id="@+id/react"
+                    android:layout_width="51dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="7dp"
+                    android:background="#EEEEEE"
+                    android:src="@drawable/outline_favorite_white_48" />
+
+                <ImageView
+                    android:id="@+id/cmt"
+                    android:layout_width="51dp"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/react"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="210dp"
+                    android:layout_marginRight="-108dp"
+                    android:layout_toLeftOf="@+id/count"
+                    android:background="#FFFFFF"
+                    android:src="@drawable/cmt" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.vku.lmhiep.finalexam">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="HealthyFood"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FinalExam">
+        <activity android:name=".User.stranger" />
+        <activity android:name=".View.feeds" />
+        <activity android:name=".View.forum" />
+        <activity android:name=".User.profile" />
+        <activity android:name=".User.info" />
+        <activity android:name=".View.deleteitem" />
+        <activity android:name=".View.additem" />
+        <activity android:name=".View.AddFood" />
+        <activity android:name=".View.ChooseCalo" />
+        <activity android:name=".View.detailFood" />
+        <activity android:name=".index" />
+        <activity android:name=".User.Register" />
+        <activity android:name=".User.MainActivity" />
+        <activity android:name=".splash.splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

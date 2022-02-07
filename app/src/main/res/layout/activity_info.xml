@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#FFFFFF"
+    android:layout_marginTop="50dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="BMI"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:background="@drawable/et_custom"
+        android:textSize="15sp" />
+
+    <EditText
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:id="@+id/sex"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Giới tính"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/et_custom"
+        android:textSize="15sp" />
+
+    <EditText
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Tuổi"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:inputType="phone"
+        android:background="@drawable/et_custom"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_custom"
+            android:text="Sign up"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+</LinearLayout>
